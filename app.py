@@ -73,7 +73,7 @@ def main():
     st.title('Model Demo Deteksi Kualitas Garam')
     
     selected2 = option_menu(None, ["Home", "Upload", "Kamera"], 
-    icons=['house', 'cloud-upload', "list-task"], 
+    icons=['house', 'cloud-upload', "camera"], 
     menu_icon="cast", default_index=0, orientation="horizontal")
     #selected2
     if selected2 == "Home":
@@ -84,13 +84,15 @@ def main():
 
     elif selected2 == "Upload":
        image = load_image()
-       result = st.button('Run on image')
-       if result:
-          model = load_saved_model()
-          categories = load_labels()
-          st.write('Calculating results...')
-          predict(model, categories, image)
-          #print(categories)
+       if image is not None:
+            result = st.button('Run on image')
+            if result:
+                model = load_saved_model()
+                categories = load_labels()
+                st.write('Calculating results...')
+                predict(model, categories, image)
+                #print(categories)
+
     elif selected2 == "Kamera":
        picture = st.camera_input("Take a picture")
        if picture:
