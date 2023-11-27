@@ -24,7 +24,7 @@ def load_image():
 def preprocess_img():
     image_dat = cv2.imread("uploaded_img/1.jpg", cv2.IMREAD_COLOR)
     w, h = image_dat.shape[1], image_dat.shape[0]
-    crop_width = 1000 if 1000<image_dat.shape[1] else image_dat.shape[1]
+    crop_width = 1000 if 1000<image_dat.shape[1] else image_dat.shape[0]
     crop_height = 1000 if 1000<image_dat.shape[0] else image_dat.shape[0] 
     mid_x, mid_y = int(w/2), int(h/2)
     cw2, ch2 = int(crop_width/2), int(crop_height/2) 
