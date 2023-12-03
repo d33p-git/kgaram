@@ -37,7 +37,8 @@ def preprocess_img():
     image_dat = image_dat/255.0
     print(image_dat)
     return image_dat
-    
+
+@st.cache_resource    
 def load_saved_model():
     #model = load_model('best_model_1.h5')
     model = tf.keras.models.load_model('best_model_1.h5')
