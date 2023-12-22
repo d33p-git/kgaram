@@ -74,6 +74,7 @@ def main():
     #        </style>
     #        """
     #st.markdown(hide_st_style, unsafe_allow_html=True)
+    st.image(image, caption='')
     st.title('Model Demo Deteksi Kualitas Garam')
     
     selected2 = option_menu(None, ["Home", "Upload", "Kamera"], 
