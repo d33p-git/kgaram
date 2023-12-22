@@ -4,6 +4,7 @@ import numpy as np
 import cv2
 from streamlit_option_menu import option_menu
 import tensorflow as tf
+from PIL import Image
 
 image = Image.open('img/logo-utm-128.png')
 
