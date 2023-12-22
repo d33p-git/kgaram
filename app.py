@@ -73,7 +73,13 @@ def main():
     #        """
     #st.markdown(hide_st_style, unsafe_allow_html=True)
     logo_utm = Image.open('img/logo-utm-128.png')
+    logo_ptgaram = Image.open('img/pt-garam-128.png')
+    logo_kreka = Image.open('img/kreka-128.png')
+    logo_dikbud = Image.open('img/dikbud-128.png')
     st.image(logo_utm, caption='')
+    st.image(logo_ptgaram, caption='')
+    st.image(logo_kreka, caption='')
+    st.image(logo_dikbud, caption='')
     st.title('Model Demo Deteksi Kualitas Garam')
     
     selected2 = option_menu(None, ["Home", "Upload", "Kamera"], 
