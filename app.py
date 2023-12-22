@@ -6,8 +6,6 @@ from streamlit_option_menu import option_menu
 import tensorflow as tf
 from PIL import Image
 
-image = Image.open('img/logo-utm-128.png')
-
 SIZE = 224
 
 def load_image():
@@ -74,7 +72,8 @@ def main():
     #        </style>
     #        """
     #st.markdown(hide_st_style, unsafe_allow_html=True)
-    st.image(image, caption='')
+    logo_utm = Image.open('img/logo-utm-128.png')
+    st.image(logo_utm, caption='')
     st.title('Model Demo Deteksi Kualitas Garam')
     
     selected2 = option_menu(None, ["Home", "Upload", "Kamera"], 
