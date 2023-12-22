@@ -5,7 +5,7 @@ import cv2
 from streamlit_option_menu import option_menu
 import tensorflow as tf
 
-image = Image.open('logo-utm-128.png')
+image = Image.open('img/logo-utm-128.png')
 
 SIZE = 224
 
