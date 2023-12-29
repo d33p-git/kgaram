@@ -77,7 +77,8 @@ def main():
     logo_kreka = Image.open('img/kreka-128.png')
     logo_dikbud = Image.open('img/dikbud-128.png')
     st.image([logo_utm, logo_ptgaram, logo_dikbud, logo_kreka])
-    st.title('Model Demo Deteksi Kualitas Garam')
+    #st.title('Model Demo Deteksi Kualitas Garam')
+    st.title('Aplikasi Deteksi Rapid Estimasi Kualitas Garam')
     
     selected2 = option_menu(None, ["Home", "Upload", "Kamera"], 
     icons=['house', 'cloud-upload', "camera"], 
